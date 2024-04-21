@@ -46,7 +46,7 @@ mknod ${one} p
 mknod ${two} p
 chmod 0600 ${one} ${two}
 
-read -p "Enter password for '$1' (blank for none; password will be visible): " \
+read -rp "Enter password for '$1' (blank for none; password will be visible): " \
   password
 
 if [ "${3}" = "rsa" -o "$#" -eq 2 ]; then
